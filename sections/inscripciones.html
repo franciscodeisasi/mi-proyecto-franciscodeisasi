@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inscripciones</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="grillaGeneral">
@@ -37,40 +38,40 @@
             </section>
         </header>
        
-        <form class="contacto">
-            <Label for="nombre y apellido">NOMBRE Y APELLIDO
+        <form class="contacto" data-aos="fade-right">
+            <Label for="nombre y apellido" data-aos="fade-right">NOMBRE Y APELLIDO
                 <input type="text" placeholder="pedro gomez" name="NOMBRE Y APELLIDO"><br>
             </Label>
-            <label for="email">email:
-                <input type="email" placeholder="aaa@gmail.com" name="email"><br>
+            <label for="email" data-aos="fade-left" >email:
+                <input type="email" placeholder="aaa@gmail.com" name="email" data-aos="fade-left"><br>
             </label>
             <br>
-            <input type="date" id="start" name="trip-start"
+            <input data-aos="fade-right" type="date" id="start" name="trip-start"
             value="2022--"
             min="1900-01-01" max="2015-1-1">
-            <input type="number" placeholder="edad"><br>
+            <input data-aos="fade-right" type="number" placeholder="edad" data-aos="fade-left"><br>
             <div><p>SEXO:</p>
                 <div>MUJER
-                    <input type="radio" name="lado" value="mujer">
+                    <input type="radio" name="lado" value="mujer" data-aos="fade-left">
                 </div>
                 <div>HOMBRE
-                    <input type="radio" name="lado" value="hombre">
+                    <input type="radio" name="lado" value="hombre" >
                 </div>
             </div>
-            <p>¿que actividad te gustaria comenzar?</p>
+            <p data-aos="fade-left">¿que actividad te gustaria comenzar? </p>
             <select name="letra" id="letra"> 
                 <option value="CrossFit">CROSSFIT</option>
                 <option value="funcional">FUNCIONAL</option>
                 <option value="musculacion">MUSCULACION</option>
                 <option value="libre">LIBRE</option>
             </select>
-            <label for="Observaciones"> OBSERVACIONES:<br>
-                <textarea placeholder="comentanos si queres alguna preparacion especial"></textarea>
+            <label for="Observaciones" data-aos="fade-left"> OBSERVACIONES:<br>
+                <textarea placeholder="comentanos si queres alguna preparacion especial" ></textarea>
             </label>
-            <div>Queres recibir info sobre nosotros?
+            <div data-aos="fade-left">Queres recibir info sobre nosotros?
                 <input type="checkbox" name="acepta" value="1"></div>
             <DIv>ENVIAR</DIv>
-            <input type="submit" value="SI">
+            <input type="submit" value="SI" data-aos="fade-left">
             <input type="reset" value="NO">
         </form>
     
@@ -85,6 +86,9 @@
         </footer>
 
     </div>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
