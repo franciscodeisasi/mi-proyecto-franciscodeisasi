@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2? family= Indie+Flower & display=swap');
+/*colores
+rgb(237, 237, 237)
+*/
+
+/*tipografia
+font-family: 'Indie Flower', cursive;*/
+
+/*mobile first*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* estructura general  */
+body{
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    list-style-type: none;
+    text-decoration: none;
+    background-color: rgb(237, 237, 237);
+}
+.titulo{
+    color: darkslategrey;
+    text-align: center; 
+    height: 30%;
+    width: 100%;
+}
+header{  background-color: #387373;
+}
+.barranav nav ul {
+
+    list-style-type: none;
+    text-decoration: none;
+    color: brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%px;
+}
+.barranav nav ul li a{ 
+    list-style-type: none;
+    text-decoration: none;
+    color: brown;
+}
+.segundaSeccion main div li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: brown;
+}
+.segundaSeccion, .gimnasio, .actividades, .noticia1, .contacto1, .contacto, .inscribite{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+footer{ 
+    padding: 25px;
+    margin-bottom: 0;
+    margin-top: 15px;
+    
+}
+footer nav{
+    margin: 80px 250px 80px 250px;
+    border-radius: 50px;
+    text-decoration: none;
+    list-style-type: none;
+}
+.redes{
+    margin: 10px 10px 10px 10px;
+}
+.nav1, .inscribite {
+    background-color: #97A6A0;
+    border-style: groove;
+    text-decoration: none;
+    list-style-type: none;
+}
+/*areas para primer medida index*/
+h1 {
+    grid-area: h1;
+}
+.barranav{
+    grid-area: barranav;
+}
+.primeraSeccion{
+    grid-area: primeraSeccion;
+}
+.segundaSeccion{
+    grid-area: segundaSeccion;
+}
+.p1{
+    grid-area: comentario;
+}
+.redes{
+    grid-area: redes;
+}
+#pie{
+    grid-area: pie;
+}
+.grillaIndex{
+    margin-bottom: 1.5em;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+    "h1"
+    "barranav"
+    "primeraSeccion"
+    "segundaSeccion"
+    "comentario"
+    "pie";
+}
+/*areas para primer medida grillaActividades*/
+h1{
+    grid-area: h1;
+}
+.barranav{
+    grid-area: barranav;
+}
+.gimnasio{
+    grid-area: gimnasio;
+}
+.actividades{
+    grid-area: actividades;
+}
+.inscribite{
+    grid-area: inscribite;
+}
+#pie{
+    grid-area: pie;
+}
+.grillaActividades{
+    margin-bottom: 1.5em;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:
+    "h1"
+    "barranav"
+    "gimnasio"
+    "actividades"
+    "inscribite"
+    "pie"
+}
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .grillaIndex{
+    margin-bottom: 1.5em;
+    background-color: orangered;
+    display: grid;
+    gap: 20px;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+    "h1 h1"
+    "barranav barranav"
+    "primeraSeccion primeraSeccion"
+    "segundaSeccion segundaSeccion"
+    "comentario comentario"
+    "pie pie";
+    
+}
+.grillaActividades{
+    margin-bottom: 0em;
+    background-color: greenyellow;
+    display: grid;
+    gap: 20px;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:
+    "h1 h1"
+    "barranav barranav"
+    "gimnasio gimnasio"
+    "actividades actividades"
+    "inscribite inscribite"
+    "pie pie";        
+}
+}
+@media screen and (min-width:900px) and (max-width: 1300px){
+    .grillaIndex{
+        margin-bottom: 1.5em;
+        display: grid;
+        gap: 20px;
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "h1 h1 h1"
+        "barranav barranav barranav"
+        "primeraSeccion primeraSeccion primeraSeccion"
+        "segundaSeccion segundaSeccion segundaSeccion"
+        "comentario comentario comentario"
+        "pie pie pie"
+    }
+    .grillaActividades{
+        margin-bottom: 0em;
+        background-color: cornflowerblue;
+        display: grid;
+        gap: 20px;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas:
+        "h1 h1"
+        "barranav barranav"
+        "gimnasio gimnasio"
+        "actividades actividades"
+        "inscribite inscribite"
+        "pie pie";        
+    }
+}
+{}
+
+
+
+
+
+
+
+
+

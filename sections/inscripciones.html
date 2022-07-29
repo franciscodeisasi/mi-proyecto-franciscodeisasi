@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscripciones</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="grillaGeneral">
+        <h1 class="titulo">GIMNASIO 1Y57</h1>
+        <header class="barranav">
+            <section class="barranav">
+                <nav>
+                    <ul>
+                        <li class="nav1"> 
+                            <a href="../index.html">INICIO</a> 
+                        </li>
+                        <li class="nav1">
+                            <a href="actividades.html">ACTIVIDADES</a>
+                        </li>
+                        <li class="nav1">
+                            <a href="noticias.html">NOTICIAS</a>
+                        </li>
+                        <li class="nav1">
+                            <a href="inscripciones.html">INSCRIPCIONES</a>
+                        </li>
+                        <li class="nav1">
+                            <a href="contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav1">
+                            <a href="#pie">REDES</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+       
+        <form class="contacto">
+            <Label for="nombre y apellido">NOMBRE Y APELLIDO
+                <input type="text" placeholder="pedro gomez" name="NOMBRE Y APELLIDO"><br>
+            </Label>
+            <label for="email">email:
+                <input type="email" placeholder="aaa@gmail.com" name="email"><br>
+            </label>
+            <br>
+            <input type="date" id="start" name="trip-start"
+            value="2022--"
+            min="1900-01-01" max="2015-1-1">
+            <input type="number" placeholder="edad"><br>
+            <div><p>SEXO:</p>
+                <div>MUJER
+                    <input type="radio" name="lado" value="mujer">
+                </div>
+                <div>HOMBRE
+                    <input type="radio" name="lado" value="hombre">
+                </div>
+            </div>
+            <p>¿que actividad te gustaria comenzar?</p>
+            <select name="letra" id="letra"> 
+                <option value="CrossFit">CROSSFIT</option>
+                <option value="funcional">FUNCIONAL</option>
+                <option value="musculacion">MUSCULACION</option>
+                <option value="libre">LIBRE</option>
+            </select>
+            <label for="Observaciones"> OBSERVACIONES:<br>
+                <textarea placeholder="comentanos si queres alguna preparacion especial"></textarea>
+            </label>
+            <div>Queres recibir info sobre nosotros?
+                <input type="checkbox" name="acepta" value="1"></div>
+            <DIv>ENVIAR</DIv>
+            <input type="submit" value="SI">
+            <input type="reset" value="NO">
+        </form>
+    
+        <footer id="pie">
+            <div class="redes">
+                <img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"/>
+                <img src="https://img.icons8.com/fluency/48/000000/facebook-new.png"/>
+                <img src="https://img.icons8.com/color/48/000000/gmail--v1.png"/>
+    
+            </div>
+            <!-- pie de pagina -->
+        </footer>
+
+    </div>
+
+</body>
+</html>
